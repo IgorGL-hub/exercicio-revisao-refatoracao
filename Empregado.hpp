@@ -6,10 +6,15 @@
 
 class Empregado {
 	
-  public:
+  private:
     double salarioHora;  
-    double quotaMensalVendas;  
+    double quotaMensalVendas;
 
+  public:
+    double getSalarioHora();
+    double getQuotaMensalVendas(); 
+    void setSalarioHora(double s);
+    void setQuotaMensalVendas(double q);
 
     double pagamentoMes(double horasTrabalhadas) {
  
