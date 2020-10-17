@@ -1,39 +1,36 @@
-/* #include "Engenheiro.cpp"
-#include "Vendedor.cpp"
-#include "Empregado.cpp"
- */
+
 #include "Empregado.hpp"
 #include "Vendedor.hpp"
-#include "Engenheiro.cpp"
+#include "Engenheiro.hpp"
 #include "string.h"
 
 int main() {
 
   Engenheiro eng1;
-  eng1.nome = "Joao Snow";
+  eng1.setNome("Joao Snow");
   eng1.setSalarioHora(35);
-  eng1.projetos = 3; 
-  std::cout << "Nome: " << eng1.nome << std::endl;
+  eng1.setProjetos(3); 
+  std::cout << "Nome: " << eng1.getNome() << std::endl;
   std::cout << "Salario Mes: " << eng1.pagamentoMes(9.5) << std::endl;
-  std::cout << "Projetos: " << eng1.projetos << std::endl;
+  std::cout << "Projetos: " << eng1.getProjetos() << std::endl;
   std::cout << std::endl;
   
   Engenheiro eng2;
-  eng2.nome = "Daniela Targaryen";
+  eng2.setNome("Daniela Targaryen");
   eng2.setSalarioHora(30);
-  eng2.projetos = 1; 
-  std::cout << "Nome: " << eng2.nome << std::endl;
+  eng2.setProjetos(1); 
+  std::cout << "Nome: " << eng2.getNome() << std::endl;
   std::cout << "Salario Mes: " << eng2.pagamentoMes(8) << std::endl;
-  std::cout << "Projetos: " << eng2.projetos << std::endl;  
+  std::cout << "Projetos: " << eng2.getProjetos() << std::endl;  
   std::cout << std::endl;
   
   Engenheiro eng3;
-  eng3.nome = "Bruno Stark";
+  eng3.setNome("Bruno Stark");
   eng3.setSalarioHora(30);
-  eng3.projetos = 2; 
-  std::cout << "Nome: " << eng3.nome << std::endl;
+  eng3.setProjetos(2); 
+  std::cout << "Nome: " << eng3.getNome() << std::endl;
   std::cout << "Salario Mes: " << eng3.pagamentoMes(8) << std::endl;
-  std::cout << "Projetos: " << eng3.projetos << std::endl;  
+  std::cout << "Projetos: " << eng3.getProjetos() << std::endl;  
   std::cout << std::endl;
   
   
