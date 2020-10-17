@@ -2,13 +2,11 @@
 #include "Empregado.hpp"
 #include "Vendedor.hpp"
 
-// class Vendedor : public Empregado {
-
-//   public:
-//     std::string nome;  	  
+ 	  
 	
 double Vendedor::quotaTotalAnual() {
-	return getQuotaMensalVendas() * 12;
+	int meses = 12;
+	return getQuotaMensalVendas() * meses;
 }
 
 void Vendedor::setNome(std::string n) {
