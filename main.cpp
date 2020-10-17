@@ -66,7 +66,3 @@ int main() {
   return 0;	
 }
 
-/* Removidos alguns numeros mágicos.
-   Atributos movidos para private e adiconados setters e getters para garantir o encapsulamento.
-   Criados os arquivos: Empregado.cpp, Vendedor.hpp, Engenheiro.hpp para mover a implementação de metodos para os arquivos cpp.
-   Corrigido as impressões e atribuições de valores no main para que funcionem com os atributos privados.  
